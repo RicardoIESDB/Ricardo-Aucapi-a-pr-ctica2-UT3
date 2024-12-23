@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Yuji Mai", serif;
+}
+
+.div_container {
+  min-height: 100vh;
+  min-width: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 5em; */
+  min-height: 10vh;
+  min-width: auto;
+  background: rgb(41, 141, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 141, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  min-width: auto;
+  border: 1px solid;
+  border-radius: 8px;
+  background: rgb(41, 141, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 141, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+main {
+  min-height: 70vh;
+  min-width: auto;
+  border: 1px solid;
+  border-radius: 8px;
+  background: rgb(41, 141, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 141, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+  padding: 1.5em;
+}
+
+aside {
+  min-height: 80vh;
+  min-width: 20vw;
+  border: 1px solid;
+  border-radius: 8px;
+  background: rgb(41, 141, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 141, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 10vh;
+  min-width: auto;
+  border: 1px solid;
+  border-radius: 8px;
+  background: rgb(41, 141, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 141, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 3px gray;
+}
+
+form:hover {
+  background: rgb(25, 36, 25);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 36, 25, 1) 0%,
+    rgba(78, 210, 69, 1) 42%,
+    rgba(10, 150, 10, 0.943) 100%
+  );
+}
+
+header > form {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+header > form:hover {
+  background-color: transparent;
+}
+
+.div_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.div_nav_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.div_button_checkbox {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25em;
+  justify-content: space-around;
+}
+
+.div_button_checkbox > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.25em;
+}
+
+div > label {
+  font-size: 0.75em;
+  width: auto;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  height: 3em;
+  width: 7em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(55, 255, 112);
+  background: linear-gradient(
+    0deg,
+    rgba(55, 255, 112, 1) 16%,
+    rgba(205, 205, 205, 1) 100%
+  );
+  color: black;
+}
+
+header > form > input {
+  transition: transform 2s;
+}
+
+header > form > input:hover {
+  transform: scale(1.2);
+}
+
+form > input + button {
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.5em;
+}
+
+footer > p {
+  padding-right: 5em;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 50vw;
+}
+
+a {
+  color: beige;
+  text-decoration: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip button:hover + span {
+  visibility: visible;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 13, 1) 52%,
+    rgba(12, 255, 0, 1) 100%
+  );
+  color: white;
+  border-radius: 9px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+span {
+  visibility: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 13, 1) 52%,
+    rgba(12, 255, 0, 1) 100%
+  );
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  min-width: auto;
+  padding: 3px;
+  opacity: 0;
+  transition: opacity 0.5s, linear 5s;
+  animation: fadeOut 5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+header + p {
+  padding: 1em;
+}
+
+ol > li {
+  padding: 1em;
+}

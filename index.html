@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <title>Practica 2</title>
+  </head>
+
+  <body>
+    <div class="div_container">
+      <header>
+        <img src="img/persona-de-libre-dedicacion.png" height="64" width="64" />
+        <h1>Registro de Usuario</h1>
+        <form>
+          <input type="text" placeholder="Buscar" />
+          <button type="submit">🔍​</button>
+        </form>
+      </header>
+      <div class="div_content">
+        <aside>
+          <fieldset>
+            <legend>Registro de usuario</legend>
+            <form>
+              <label for="email">Nombre:</label>
+              <input
+                type="email"
+                required
+                autofocus
+                placeholder="usuario@example.com"
+                id="email"
+              />
+              <label for="password">Contraseña:</label>
+              <input
+                type="password"
+                required
+                placeholder="**********"
+                id="password"
+              />
+              <label for="tel">Teléfono móvil:</label>
+              <input type="tel" placeholder="+34-604-123-456" id="tel" />
+              <label for="birth_date">Fecha de nacimiento:</label>
+              <input type="date" id="birth_date" />
+              <div class="div_button_checkbox">
+                <div>
+                  <label for="remember_password"
+                    >Desea recordar la contraseña</label
+                  >
+                  <input type="checkbox" id="remember_password" />
+                </div>
+                <div>
+                  <button type="submit">Dar de Alta</button>
+                  <div class="tooltip">
+                    <button type="submit">Entrar</button>
+                    <span>Entra y descubre!</span>
+                    <!-- <span class="tooltip_text">Entra y descubre!</span> -->
+                  </div>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+        </aside>
+        <div class="div_nav_main">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./public/html/productos.html">Productos</a></li>
+              <li>Sobre Nosotrso</li>
+              <li>Ayuda</li>
+            </ul>
+          </nav>
+          <main>
+            <header>
+              <h2>Bienvenidos a la tienda de componentes informática</h2>
+            </header>
+            <p>
+              Los componentes informáticos son los elementos esenciales que
+              conforman una computadora o cualquier sistema electrónico
+              relacionado con la informática. Estos componentes trabajan de
+              manera conjunta para garantizar el correcto funcionamiento de un
+              dispositivo. A continuación, te presentamos algunos de los
+              componentes más importantes:
+            </p>
+            <ol>
+              <li>
+                Procesador (CPU): Es el cerebro de la computadora. Se encarga de
+                ejecutar las instrucciones de los programas y coordinar el
+                funcionamiento de otros componentes.
+              </li>
+              <li>
+                Memoria RAM: Es la memoria de trabajo donde se almacenan los
+                datos temporales de los programas que están en uso. Cuanta más
+                RAM tenga un equipo, mejor será su rendimiento en tareas
+                multitarea.
+              </li>
+              <li>
+                Placa Base (Motherboard): Es el circuito principal que conecta
+                todos los componentes de la computadora. En ella se encuentran
+                las ranuras para la CPU, la RAM, las tarjetas gráficas, y otros
+                periféricos.
+              </li>
+              <li>
+                Tarjeta Gráfica (GPU): Es responsable de procesar los gráficos y
+                videos que se muestran en la pantalla. Es fundamental para
+                tareas como el diseño gráfico, edición de video y gaming.
+              </li>
+              <li>
+                Disco Duro o SSD: Son los dispositivos de almacenamiento donde
+                se guardan los datos a largo plazo, como el sistema operativo,
+                programas y archivos personales. Los SSD (Solid State Drive) son
+                más rápidos y duraderos que los discos duros tradicionales
+                (HDD).
+              </li>
+              <li>
+                Fuente de Alimentación (PSU): Proporciona energía eléctrica a
+                todos los componentes del sistema. Es esencial para el
+                funcionamiento de la computadora.
+              </li>
+            </ol>
+          </main>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; Ricardo Aucapiña</p>
+      </footer>
+    </div>
+  </body>
+</html>
